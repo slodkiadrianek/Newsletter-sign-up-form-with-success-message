@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@400;900&family=Rubik:wght@600&family=Work+Sans:wght@100&display=swap');
+
+
+*{
+    margin:0;padding:0;box-sizing:border-box
+}
+:root{
+    /* ### Primary  */
+    --Tomato: hsl(4, 100%, 67%);
+    /* ### Neutral */
+     --DarkSlateGrey: hsl(234, 29%, 20%); 
+     --CharcoalGrey: hsl(235, 18%, 26%); 
+     --Grey: hsl(231, 7%, 60%); 
+     --White: hsl(0, 0%, 100%);
+     --FONT: 'Roboto'
+}
+body{
+    background-color: var(--CharcoalGrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--FONT);
+}
+.main__con{
+    height: 66vh;
+    width: 100vh;
+    background-color: var(--White);
+    display: flex;
+    border-radius: 40px;
+}
+.content__con{
+    width: 50%;
+    background-color: var(--White);
+    height: auto;
+    margin: 2em;
+}
+.left{
+    background-image: url(images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right__header{
+    font-size: 64px;
+    font-weight: 550;
+    color: var(--DarkSlateGrey);
+    margin-block: 0.5em;
+}
+.right__header__span{
+    font-size: 18px;
+    margin-inline: 0.2em;
+    margin-bottom: 1.5em;
+}
+.list{
+   
+    list-style-image: url(images/icon-list.svg) ;
+    margin-bottom: 2em;
+}
+.list__element{
+    font-size: 16px; 
+    margin-bottom: 0.5em; 
+    color: var(--DarkSlateGrey);
+
+}
+.list__text{
+    position: relative;
+    top: -4px;
+    left: 10px;
+    margin-inline: .2em;
+    padding-bottom: 1em;
+}
+.email{
+    width: 90%;
+    height: 10%;
+    border-radius: 10px;
+    border: var(--Grey) 1px solid;
+    padding-left: 20px;
+    margin-bottom: 2em;
+}
+.button{
+    width: 97%;
+    height: 10%;
+    border-radius: 10px;
+    border: var(--Grey) 1px solid;
+    background-color: var(--DarkSlateGrey);
+    font-size: 16px;
+    color: var(--White);
+    font-weight: 600;
+transition: all 600ms ;
+}
+.button:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(209, 20, 131, 1) 8%, rgba(253, 36, 31, 1) 27%, rgba(252, 176, 69, 1) 78%);
+    border: 1px solid transparent ;
+    box-shadow: 0px 10px 50px rgb(109, 24, 24);
+}
+.label__con{
+    width: 95%;
+display: flex;
+justify-content: space-between;   
+margin-block: 0.5em;
+}
+.text__email{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.wrong_email{
+    background-color: rgb(253, 196, 196);
+    border: red 1px solid;
+    outline: red 1px  solid;
+    color: red;
+}
+.text__validation{
+        font-size: 12px;
+            line-height: 18px;
+            font-weight: 600;
+            color: red;
+}
+
+.thank__con{
+    height: 54vh;
+    width: 22vw;
+    background-color: var(--White);
+    border-radius: 30px;
+    padding: 3em;
+}
+.thank__header{
+    margin-block: 0.4em;
+    font-size: 64px;
+        font-weight: 550;
+        color: var(--DarkSlateGrey);
+}
+.thank__text{
+    text-align: left;
+    font-family: var(--FONT);
+    color: var(--DarkSlateGrey);
+}
+.thank__button{
+    margin-top: 1.5em;
+    height: 15%;
+}
+
+@media (max-width: 540px){
+
+    .main__con{
+        position: relative;
+        top:-120px;
+        display: flex;
+        flex-direction:column-reverse;
+        height: 100vh;
+        width: auto;
+        border-radius: 0px;
+    }
+    .content__con{
+        margin: 1.7em;
+        width: 86%;
+
+    }
+    .left{
+        background-image: url(images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100vw;
+        height: 50%;
+        border-radius: 20px;
+        margin: 0;
+        width: 100%;
+    }
+    .button{
+        height: 8vh;
+     }
+    .email{
+    height: 8vh;
+    }
+    .thank__con{
+        width: auto;
+        height: auto;
+    }
+}
+.hidden {
+    display: none;
+    position: relative;
+    top: 0;
+    height: 0;
+    width: 0;
+}

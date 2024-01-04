@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="main__con ">
+        <div class="content__con right">
+            <h1 class="right__header">Stay updated!</h1>
+            <span class="right__header__span">  Join 60,000+ product managers receiving monthly updates on:</span>
+            <div class="koks">
+            <ul class="list">
+                <li class="list__element"><span class="list__text">Product discovery and building what matters</span></li>
+                <li class="list__element"><span class="list__text">Measuring to ensure updates are a success</span></li>
+                <li class="list__element"><span class="list__text"> And much more!</span></li>
+            </ul>
+            </div>
+            <div class="label__con">
+                <div><p class="text__email">Email address</p></div>
+                <div><p class="text__validation"></p></div>
+               
+            </div>
+            <input class="email" type="email" placeholder="email@company.com">
+            <button class="button">Subscribe to monthly newsletter</button>
+        </div>
+        <div class="content__con left"></div>
+    </div>
+
+    <div class="thank__con hidden">
+        <img src="images/icon-success.svg" alt="">
+        <h1 class="thank__header">Thanks for subscribing!</h1>
+        <p class="thank__text">A confirmation email has been sent to <span class="email__place">@</span>. Please open it and click the button inside to confirm your
+        subscription.</p>
+        <button class="button thank__button">Dismiss message</button>
+    </div>
+</body>
+</html>
